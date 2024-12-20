@@ -1,0 +1,12 @@
+class ImageUrls {
+  static const weddingImage =
+      'https://s3-alpha-sig.figma.com/img/9a6c/9b1f/aa52874501ae88530abcf573861106a8?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ymn1zO6SwXl4qAbyUjIBiVIHojPM4jwsJC881pXoFPxsDUgjgge4EbYZY92u8bqallYOle~40YHbjZILkyrEBoLcNwg4zP-Y4-qrc34UlAm7geyVavV~-ruCYVGa3eebKXq0oC~55ZjfpbyE036h36j6rYZpZbPcqQAjirevz2zW-HxIWZ4DeKCzW2wcyr2Nc2vkAGAz~s3Ny5AQpM8gD5ci8OFptCIRtQxoEftko6Sqt9jutIBOcXvG0EX8DDqVDR1-dfyakWZADXtVTATEL89D-ZJB2aUXNWl1q4dB7SlxAhiv-yB9GgFgQPKK2Uphd8dYQsySCroQUQaJ6D5kvg__';
+
+  static const foodItem =
+      'https://s3-alpha-sig.figma.com/img/fe9e/d295/77cf1adfc87b34d60d68a1cc5dc19d31?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Kasr0x4HD~sn2cHhfu7jQrlxXHDq2nCMdAitKfSNrvDwcpKV4jMmqheZZ8iaxnAULPTrBy~NZaabMQm9ewdAuUO8whzsVWs1I2jCHAaBjR9YpDFgPYGV-bc-92pcircTgwmfqHioeFfUboQ4FJB78VpXQUdXZ-2k4POxY3TwYDh1NV2Zv-hidLImx-G9vnBk9F0JI0cxCr4dA4x1hMzOb~osh5Y6DloNyt8~TRJzzVsXBMihBhRiukrDFUgCwu9q4QmnEaRmAZVV0YMf1wskaj-BBuWKGQYoUbBeMFgvvlTKVBePEpMU1PgfUFTFo24fi7UiItZis1sfwsNELFRq5w__';
+
+  static const starterSamosaImage =
+      'https://s3-alpha-sig.figma.com/img/b823/f2d5/510d01681894194c48209c488d13ed2f?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OOD6KN7OMxYqSBxdWKRct9IkWiI~i0Ixr77f-aJIWM5rE9I4GUlINaHlzImCFJdAS7~JwRYBSY7J5nVNskcMcEsDuT1NJRmdBfvmmvrFquChJRloTyi2hD~8t9fHNsHpAd71hULyVsVfufCjVOF1ig10pRgxVfrNowdjk7Q-Tj3wUuMDvE90a50d8BiLR3MISxxv7nYlbW6eCGw1nvlEl4zCZQ-IhOzJiAm7EPlmRl-Nr9i4kjyskx-4R9AsTA~t8~ZJl4JliM94NdQDy343QQdvQUeVkmHzK3JWnbavQPfH0NWilpmR412y4tP9n7GbZ-1GOJs35skBmeOhRXkt-A__';
+
+  
+}
