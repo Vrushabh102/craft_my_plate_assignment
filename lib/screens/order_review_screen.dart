@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:assignment_craft_my_plate/constants/colors.dart';
 import 'package:assignment_craft_my_plate/providers/guest_count_provider.dart';
 import 'package:assignment_craft_my_plate/providers/price_per_plate_discount.dart';
@@ -25,23 +23,6 @@ class _OrderReviewScreenState extends ConsumerState<OrderReviewScreen> {
   final double totalToPay = 41800.0;
   final double originalPrice = 90500.0;
   final double savings = 17130.0;
-
-  String _formatDate(DateTime date) {
-    return "${date.day}/${date.month}/${date.year}";
-  }
-
-  String _formatTime(TimeOfDay time) {
-    final hour = time.hourOfPeriod == 0 ? 12 : time.hourOfPeriod;
-    final period = time.period == DayPeriod.am ? 'AM' : 'PM';
-    return "${hour.toString().padLeft(2, '0')}:${time.minute.toString().padLeft(2, '0')} $period";
-  }
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    log(ref.read(guestCountProvider).toString());
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -368,6 +349,7 @@ class _OrderReviewScreenState extends ConsumerState<OrderReviewScreen> {
 
           // place order button
           Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
@@ -379,62 +361,58 @@ class _OrderReviewScreenState extends ConsumerState<OrderReviewScreen> {
               ],
               color: Colors.white,
             ),
-            padding: const EdgeInsets.symmetric(horizontal: 16),
             height: height * 0.1,
             width: width,
-            child: Expanded(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
-                        'To pay',
-                        style: TextStyle(fontSize: 16),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'To pay',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                    Text(
+                      '₹${ref.read(totalPriceWithDiscountProvider)}',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
                       ),
-                      Text(
-                        '₹${ref.read(totalPriceWithDiscountProvider)}',
-                        style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                        ),
+                    ),
+                  ],
+                ),
+                InkWell(
+                  onTap: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        behavior: SnackBarBehavior.floating,
+                        content: Text('Thank you for buying..'),
                       ),
-                    ],
-                  ),
-                  InkWell(
-                    onTap: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          behavior: SnackBarBehavior.floating,
-                          content: Text('Thank you for buying..'),
-                        ),
-                      );
-                    },
-                    child: Container(
-                      // margin: const EdgeInsets.symmetric(horizontal: 16),
-                      alignment: Alignment.bottomCenter,
-                      height: height * 0.07,
-                      width: width * 0.5,
-                      // width: width,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: CustomColors.themePurple,
-                      ),
-                      child: const Center(
-                        child: Text(
-                          'Place order',
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
+                    );
+                  },
+                  child: Container(
+                    alignment: Alignment.bottomCenter,
+                    height: height * 0.07,
+                    width: width * 0.5,
+                    // width: width,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: CustomColors.themePurple,
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'Place order',
+                        style: TextStyle(
+                          color: Colors.white,
                         ),
                       ),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           )
         ],

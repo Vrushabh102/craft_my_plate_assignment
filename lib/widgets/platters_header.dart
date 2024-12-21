@@ -89,7 +89,7 @@ class PlattersHeader extends StatelessWidget {
         // Background image
         Image.asset(
           'assets/bride_groom.png',
-          fit: BoxFit.cover,
+          fit: BoxFit.contain,
           height: height * 0.3,
         ),
         // Black shadow overlay

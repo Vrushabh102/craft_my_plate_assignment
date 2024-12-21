@@ -240,7 +240,10 @@ class _ItemSelectionScreenState extends ConsumerState<ItemSelectionScreen> {
                         topLeft: Radius.circular(20),
                         topRight: Radius.circular(20),
                       ),
-                      child: Image.asset(item['image']),
+                      child: Image.asset(
+                        item['image'],
+                        fit: BoxFit.contain,
+                      ),
                     ),
                     const SizedBox(height: 8),
 
