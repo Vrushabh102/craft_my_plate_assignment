@@ -1,16 +1,12 @@
-# assignment_craft_my_plate
+<h3>CraftMyPlate Assignment </h3>
 
-A new Flutter project.
+Attached screenshots to this README.md file
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div style="padding-top: 20px; padding-bottom: 8px; padding-left: 16px; padding-right: 16px;">
+  <img src="https://github.com/Vrushabh102/craft_my_plate_assignment/blob/master/screenshots/IMG-20241220-WA0009.jpg" width="175" height="380">
+  <img src="https://github.com/Vrushabh102/craft_my_plate_assignment/blob/master/screenshots/IMG-20241220-WA0007.jpg" width="175" height="380">
+  <img src="https://github.com/Vrushabh102/craft_my_plate_assignment/blob/master/screenshots/IMG-20241220-WA0006.jpg" width="175" height="380">  
+  <img src="https://github.com/Vrushabh102/craft_my_plate_assignment/blob/master/screenshots/IMG-20241220-WA0008.jpg" width="175" height="380">  
+</div>
